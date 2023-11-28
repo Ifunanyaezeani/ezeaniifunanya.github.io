@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Solar Winds Breach Case Study</title>
+		<meta charset="utf-8" />
+        <style>
+            table,
+            th,
+            td {
+              padding: 10px;
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+          </style>
+	</head>
+	<body>
+        
+        <H1><p style="text-align:center">The Solar Winds Breach Case Study</p></H1>
+        <hr>
+
+      <h1><b>1.</b></h1>
+       
+        <H3><p style="text-align:center">Analysis of the SolarWinds exploits using the Cyberkill Chain</p></H3>
+        
+									<div class="table-wrapper">
+										<table class="alt" >
+											<thead>
+												<tr>
+													<th>CYBER KILL CHAIN PHASE</th>
+													<th>SOLAR WINDS EXPLOT ANALYSIS</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Reconnaissance</td>
+													<td>The attackers likely conducted extensive reconnaissance to identify and select SolarWinds as their target. 
+                                                        This could have involved identifying vulnerabilities, weaknesses, and potential entry points.</td>
+													
+												</tr>
+												<tr>
+													<td>Weaponization</td>
+													<td>In this phase, the attackers would create or acquire the malicious payload, which, in the case of SolarWinds, was a trojanized software update. 
+                                                        The malware was inserted into legitimate software, turning it into a weapon.</td>
+													
+												</tr>
+												<tr>
+													<td>Delivery</td>
+													<td> The attackers delivered the weaponized update to SolarWinds' software distribution channels, making it available to thousands of SolarWinds customers. 
+                                                        The update contained the Sunburst malware.</td>
+													
+												</tr>
+												<tr>
+													<td>Exploitation</td>
+													<td>This is where the SolarWinds exploit occurred. The attackers exploited the trust in the SolarWinds supply chain by inserting their malicious code into the software update, which was then installed on the victims' systems. 
+                                                        This was a critical phase in the attack.</td>
+													
+												</tr>
+												<tr>
+													<td>Installation</td>
+													<td>After successful exploitation, the malware was installed on the compromised systems. 
+                                                        The Sunburst malware established persistence and began communication with command and control servers.</td>
+													
+												</tr>
+                                                <tr>
+													<td>Command and Control(C2)</td>
+													<td>The malware communicated with external servers controlled by the attackers, allowing them to maintain control over the compromised systems, exfiltrate data, and issue further commands. 
+                                                        This phase was a crucial part of the attack's success.</td>
+													
+												</tr>
+                                                <tr>
+													<td>Actions on Objectives</td>
+													<td>The ultimate objective of the SolarWinds exploit was to conduct espionage, steal sensitive data, and potentially compromise the national security of the United States. 
+                                                        This phase involved exfiltrating data, conducting lateral movement, and achieving the attackers' goals.</td>
+													
+												</tr>
+                                                
+											</tbody>
+										</table>
+									</div>
+
+
+                                    <h1><b>2.</b></h1>
+                                   <ol type="1">
+                                    <li><b>Reconnaissance:</b></li><br>
+                                    <ul>
+                                    <li> Implement strong access controls: Limit access to sensitive information and systems to authorized personnel.</li><br>
+                                    <li> Monitor network traffic: Use intrusion detection and prevention systems to detect suspicious activities.</li><br>
+                                    <li> Educate employees: Train employees to recognize and report phishing attempts.</li><br>
+                                    </ul>
+
+                                <li><b>Weaponization</b></li><br>
+                                <ul>
+                                <li>Employ email filtering: Use email filtering solutions to detect and block malicious attachments.</li><br>
+                                <li>Patch and update software: Keep all software up to date to prevent known vulnerabilities from being exploited.</li><br>
+                                </ul><br>
+            
+                                <li><b>Delivery</b></li><br>
+                                    <ul>
+                                   <li> Email security solutions: Use email security gateways to scan attachments and links for malware.</li><br>
+                                    <li>User awareness training: Educate employees about the risks of downloading attachments from unknown sources.</li><br>
+                                    </ul><br>
+
+                                    <li><b>Exploitation</b></li><br>
+                                    <ul>
+                                        <li>Vulnerability management: Regularly scan for and patch software vulnerabilities.</li><br>
+                                        <li> Network segmentation: Isolate critical systems to limit the potential impact of an attack.</li><br>
+                                    </ul><br>
+
+                                   <li><b>Installation:</b></li><br>
+                                    <ul>
+                                    <li>Endpoint protection: Use advanced endpoint protection software to detect and block malicious code.</li><br>
+                                    <li>Application whitelisting: Only allow authorized applications to run on endpoints.</li><br>
+                                    </ul><br>
+
+                                   <li><b>Command and Control (C2):</b></li><br>
+                                   <ul>
+                                    <li>Network traffic monitoring: Continuously monitor network traffic for unusual patterns and connections to known malicious domains.</li><br>
+                                    <li>Firewall rules: Implement strict firewall rules to block outbound traffic to known malicious IP addresses.</li><br>
+                                   </ul>
+
+                                   <li><b>Actions on Objectives:</b></li><br>
+                                    <ul>
+                                    <li>Data encryption: Encrypt sensitive data at rest and in transit to protect it from theft.</li><br>
+                                    <li>Incident response plan: Develop and maintain an incident response plan to quickly detect and respond to security incidents.</li><br>
+                                    </ul>
+                                   </ol>
+
+                                   <p> I don't think there's a phase that can be entirely mitigated. 
+                                       Each phase can be addressed through various security measures and practices. </p><br>
+
+                                       <h1><b>3.</b></h1>
+                                       <ol type="1">
+                                        <li><b>Reconnaissance:</b></li><br>
+                                       <ul>
+                                        <li><b>Nmap</b>: A popular open-source network scanning tool for discovering hosts and services on a network.</li><br>
+                                       <li><b>Shodan:</b> A search engine for finding devices and systems connected to the internet, helpful for identifying potential targets.</li><br>
+                                       </ul>
+
+                                      <li><b>Weaponization:</b></li><br>
+                                      <ul>
+                                       <li><b>Metasploit:</b> Metasploit is a penetration testing framework that allows security professionals to develop, test, and execute exploit code against a remote target. 
+                                        It helps in simulating real-world attacks to identify vulnerabilities.</li><br>
+                                       <li><b>Burp Suite:</b> Burp Suite is a web vulnerability scanner that assists in finding security flaws in web applications. It helps in identifying weaknesses that can be exploited.</li><br>
+                                       <li><b>Wireshark</b>: Wireshark is a network protocol analyzer that captures and inspects packet data in real time. It helps in analyzing network traffic and identifying potential vulnerabilities.</li><br>
+                                      </ul>
+
+                                      <li><b>Delivery:</b></li><br>
+                                      <ul>
+                                      <li><b>PhishMe:</b> PhishMe is a phishing simulation and training platform. It allows organizations to create realistic phishing campaigns to train employees in recognizing and reporting phishing emails.</li><br>
+                                      <li><b>SpamAssassin:</b> SpamAssassin is an open-source email filter that identifies and filters spam emails. It helps in reducing the delivery of phishing emails to users' inboxes.</li><br>
+                                       <li><b>Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), Domain-based Message Authentication, Reporting, and Conformance (DMARC):</b> These email authentication protocols help in preventing email spoofing and ensuring the authenticity of received emails.</li><br>
+                                      </ul>
+
+                                       <li><b>Exploitation:</b></li><br>
+                                    <ul>
+                                       <li><b>Nmap</b>: Nmap is a network scanning tool that helps in discovering open ports and services on remote hosts. It assists in identifying potential entry points for exploitation.</li><br>
+                                       <li><b>Burp Suite:</b> Burp Suite's Intruder module can be used for automated attacks on web applications, helping in finding and exploiting vulnerabilities.</li><br>
+                                       <li><b>SQLMap:</b> SQLMap is an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection vulnerabilities in web applications.</li><br>
+                                    </ul>
+
+                                       <li><b>Installation:</b></li><br>
+                                       <ul>
+                                       <li><b>Wireshark:</b> Wireshark can be used to analyze network traffic during the installation phase, helping in identifying malicious activities and communication with command and control servers.</li><br>
+                                       <li><b>Process Monitor:</b> Process Monitor is a Windows-based monitoring tool that captures real-time system activity, including file and registry changes. It aids in detecting unauthorized installations and processes.</li><br>
+                                       <li><b>Tripwire:</b> Tripwire is an intrusion detection system that monitors file and directory changes. It helps in identifying unauthorized modifications to system files and configurations.</li><br>
+                                       </ul>
+
+                                       <li><b>Command & Control:</b></li><br>
+                                       <ul>
+                                       <li><b>Snort:</b> Snort is an open-source intrusion detection and prevention system that detects and alerts on suspicious network traffic patterns. It can be customized to identify specific command and control activities.</li><br>
+                                       <li><b>Bro:</b> Bro (now known as Zeek) is a network security monitoring framework that captures and analyzes network packets. It provides detailed insights into network behavior, aiding in detecting malicious communication.</li><br>
+                                       <li><b>Firewall and Intrusion Prevention Systems (IPS):</b> Firewalls and IPS devices can be configured to block outbound communication to known malicious IP addresses and domains, preventing command and control activities.</li><br>
+                                       </ul>
+
+                                      <li><b> Actions on Objectives:</b></li><br>
+                                      <ul>
+                                    <li><b>Encryption Tools (e.g., VeraCrypt, BitLocker):</b> Encryption tools help in encrypting sensitive data at rest, ensuring that even if unauthorized access occurs, the data remains secure and inaccessible.</li><br>
+                                    <li><b>Security Information and Event Management (SIEM) Systems:</b> SIEM systems like Splunk or ELK stack collect and analyze security data from various sources. They provide real-time insights into user activities, aiding in detecting and responding to unauthorized actions.</li><br>
+                                    <li><b> Access Control Tools (e.g., Active Directory, LDAP):</b> Access control tools help in defining and enforcing user permissions and privileges. They ensure that only authorized users can access sensitive data and perform specific actions.</li><br>
+                                    </ul>
+
+                                    <h1><b>4.</b></h1>
+                                        <p>
+                                       <a href="https://doguakdeniz-my.sharepoint.com/:p:/g/personal/20910588_emu_edu_tr/ER7ZBaGi6b1KobqXQreWjpEB4w1t8Xp7i88xpCsJ6JsBjA"><h3>My powerpoint presentation</h3></a>
+                                       </p>
+                                  </body>
+                                </html>
