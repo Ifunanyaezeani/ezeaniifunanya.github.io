@@ -11,7 +11,10 @@
        
 
         <h2>How many hops from your machine to your assigned website?</h2>
-        <P>While I carried out the scanning activity and did traceroute scan with the command (sudo traceroute) given in the note, just asterisks were displayed, so therefore I couldn’t view any hops. The website I’m tracing or scanning is google.com.</P>
+        <P>While I carried out the scanning activity and did traceroute scan with the command (sudo traceroute) given in the note, just asterisks were displayed, so therefore I couldn’t view any hops. The website I’m tracing or scanning is google.com.
+         The reason for the aesteriks could be that the routers along the path are not responding to the Time-to-Live (TTL) expiration or are configured to not respond to ICMP (Internet Control Message Protocol) packets. When a router receives a packet with TTL set to 0, 
+         it should normally send back an ICMP Time Exceeded message. However, some routers are configured not to respond to these ICMP messages for security reasons or to reduce the load on the router.
+        </P>
         
         <a href="" class="image main"><img src="traceroute1.jpg" alt="" /></a>
 
